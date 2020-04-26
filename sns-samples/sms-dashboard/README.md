@@ -1,4 +1,4 @@
-[This script](sms_dashboard.sh) will parse SMS UsageReport S3 bucket to display Total number of messages sent in a month.
+[This script](sms-dashboard.sh) will parse SMS UsageReport S3 bucket to display Total number of messages sent in a month.
 
 This will download and extract all the ```.csv.gz``` files created by SNS under S3 bucket to extract the "TotalParts" - giving us more accurate representation of the number of SMS' sent in a calendar month.
 

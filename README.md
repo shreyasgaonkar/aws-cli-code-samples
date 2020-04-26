@@ -36,8 +36,12 @@ This is an iterative repository, I'll keep adding more sample codes for more use
 $ tree
 .
 ├── README.md
+├── lambda-samples
+│   └── lambda-created-enis
+│       ├── README.md
+│       └── lambda-created-enis.sh
 └── sns-samples
-    └── sms_dashboard
+    └── sms-dashboard
         ├── README.md
-        └── sms_dashboard.sh
+        └── sms-dashboard.sh
 ```

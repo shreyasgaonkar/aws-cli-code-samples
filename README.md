@@ -21,7 +21,7 @@ A few examples of using AWS CLI for common use-cases dealing with few AWS servic
 
 ## Contributing
 
-This is an iterative repository, I'll keep adding more sample codes for more use-cases as I come across them. I have tested all scripts using ```aws-cli/1.16.239``` or above version.
+This is an iterative repository, I'll keep adding more sample codes for more use-cases as I come across them. I have tested all scripts using ```aws-cli/1.18.28``` or above version.
 
 - Fork repo
 - Upgrade AWS CLI: ```$ pip install --upgrade awscli --user```

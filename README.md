@@ -2,9 +2,17 @@
 
 A few examples of using AWS CLI for common use-cases dealing with few AWS services.
 
+## Lambda
+
+1. Hyperplane ENIs created by Lambda - [lambda-created-enis.sh](lambda-samples/lambda-created-enis)
+
+<!-- 2. Lambda function(s) using an ENI - [lambda-using-an-eni.sh](lambda-samples/lambda-using-an-eni) -->
+
+2. Lambda Provisioned Concurrency finder - [lambda-provisioned-concurrency-finder.sh](lambda-samples/lambda-provisioned-concurrency-finder)
+
 ## SNS
 
-1. Get SMS month to date spend in USD - [sms_dashboard.py](sns-samples/sms_dashboard/)
+1. Get SMS month to date spend in USD - [sms_dashboard.sh](sns-samples/sms_dashboard/)
 
 ## Additional Information
 
@@ -21,7 +29,7 @@ A few examples of using AWS CLI for common use-cases dealing with few AWS servic
 
 ## Contributing
 
-This is an iterative repository, I'll keep adding more sample codes for more use-cases as I come across them. I have tested all scripts using ```aws-cli/1.18.28``` or above version.
+This is an iterative repository, I'll keep adding more sample codes for more use-cases as I come across them. I have tested all scripts using ```aws-cli/1.18.46``` or above version.
 
 - Fork repo
 - Upgrade AWS CLI: ```$ pip install --upgrade awscli --user```
@@ -35,11 +43,16 @@ This is an iterative repository, I'll keep adding more sample codes for more use
 ```bash
 $ tree
 .
+├── CODE_OF_CONDUCT.md
+├── LICENSE
 ├── README.md
 ├── lambda-samples
-│   └── lambda-created-enis
-│       ├── README.md
-│       └── lambda-created-enis.sh
+│   ├── lambda-created-enis
+│   │   ├── README.md
+│   │   └── lambda-created-enis.sh
+│   ├── lambda-provisioned-concurrency-finder
+│   │   ├── README.md
+│   │   └── lambda-provisioned-concurrency-finder.sh
 └── sns-samples
     └── sms-dashboard
         ├── README.md

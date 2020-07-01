@@ -10,6 +10,12 @@ A few examples of using AWS CLI for common use-cases dealing with few AWS servic
 
 2. Lambda Provisioned Concurrency finder - [lambda-provisioned-concurrency-finder.sh](lambda-samples/lambda-provisioned-concurrency-finder)
 
+## CloudFront
+
+1. List all Alternate Domain names attached to all CloudFront Distribution - [list-alternate-domain-names.sh](cloudfront-samples/list-alternate-domain-names)
+
+2. List all Lambda@Edge functions attached to all CloudFront Distribution - [list-lambda-at-edge-functions.sh](cloudfront-samples/list-lambda-at-edge-functions)
+
 ## SNS
 
 1. Get SMS month to date spend in USD - [sms_dashboard.sh](sns-samples/sms_dashboard/)

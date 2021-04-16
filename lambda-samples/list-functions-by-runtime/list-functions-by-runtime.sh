@@ -18,6 +18,7 @@ Retuns lists of Lambda functions and versions using a runtime set by:
 
   -r  (Optional) Overrides the AWS region. Defaults to current region as per aws configure"
 
+REGION=$(aws ec2 describe-availability-zones --output text --query 'AvailabilityZones[0].[RegionName]')
 
 # Get usage report bucket from command line argument
 while getopts x:r: opts
@@ -44,10 +45,4 @@ if [ ! "$RUNTIME" ]; then
   echo "$usage" >&2; exit 1
 fi
 
-# Override the AWS region
-if [[ $REGION ]]
-then
-  aws lambda list-functions --function-version ALL --region $REGION --output table --query 'Functions[?Runtime==`'$RUNTIME'`].[FunctionArn,Runtime]'
-else
-  aws lambda list-functions --function-version ALL --output table --query 'Functions[?Runtime==`'$RUNTIME'`].[FunctionArn,Runtime]'
-fi
+aws lambda list-functions --function-version ALL --region $REGION --output table --query 'Functions[?Runtime==`'$RUNTIME'`].[FunctionArn,Runtime]'
